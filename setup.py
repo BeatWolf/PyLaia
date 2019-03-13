@@ -78,6 +78,7 @@ def get_scripts():
         for script in (
             "pylaia-htr-create-model",
             "pylaia-htr-decode-ctc",
+            "pylaia-htr-decode-ctc-raw",
             "pylaia-htr-train-ctc",
             "pylaia-htr-netout",
         )
