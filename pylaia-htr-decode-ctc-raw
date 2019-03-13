@@ -95,7 +95,7 @@ if __name__ == "__main__":
     )
     batch_input_fn = ImageFeeder(device=device, parent_feeder=ItemFeeder("img"))
     
-    decoder = CTCLatticeGenerator(True)
+    decoder = CTCRawDecoder(True)
     
     for batch in dataset_loader:
         batch_input = batch_input_fn(batch)
